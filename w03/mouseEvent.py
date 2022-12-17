@@ -9,6 +9,8 @@ while True:
          if event.type == QUIT:
              pygame.quit()
              sys.exit()
+         elif event.type == MOUSEBUTTONUP:
+             print(event.pos)
 
      screen.fill((0,0,0))
      pygame.display.update()
